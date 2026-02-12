@@ -5,9 +5,20 @@
 # Use either a "for loop" or "while loop" to accomplish this.
 
 def main():
-    ######################
-    # WRITE YOUR CODE HERE
-    ######################
+
+    total_tickets = 0
+
+    while True:
+        movie = input("Enter a movie name (or type 'done' to finish): ")
+
+        if movie.lower() == "done":
+            break
+
+        tickets = int(input(f"How many tickets for {movie}? "))
+        total_tickets += tickets
+
+    print("Total number of tickets desired:", total_tickets)
+
 
 
 if __name__ == '__main__':
